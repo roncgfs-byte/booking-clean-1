@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Venues | Booking with a Smile</title>
-  <link rel="stylesheet" href="style.css">
+<title>Venues | Booking With a Smile</title>
+<meta charset="UTF-8">
 </head>
+
 <body>
 
-<nav class="main-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="artists.html">Artists</a>
-  <a href="venues.html">Venues</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<h1>Venues</h1>
 
-<h1>For Venues</h1>
+<p>Register your venue to book live music.</p>
 
-<p style="max-width: 800px; margin: 20px auto;">
-Booking with a Smile helps venues connect with reliable, professional artists who understand
-the importance of punctuality, collaboration, and delivering a great experience.
+<form name="venue-application" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="venue-application">
+
+<p>
+<label>Venue Name:<br>
+<input type="text" name="venue-name" required>
+</label>
 </p>
 
-<p style="max-width: 800px; margin: 20px auto;">
-We aim to simplify the booking process, reduce miscommunication, and support long-term
-relationships between venues and performers.
+<p>
+<label>Contact Email:<br>
+<input type="email" name="email" required>
+</label>
 </p>
 
-<p style="max-width: 800px; margin: 20px auto;">
-Whether you run a small café, a live music venue, or a special event space, our goal is to help
-you book talent with confidence and ease.
+<p>
+<label>Location:<br>
+<input type="text" name="location">
+</label>
 </p>
+
+<p>
+<label>Message:<br>
+<textarea name="message"></textarea>
+</label>
+</p>
+
+<p>
+<button type="submit">Register Venue</button>
+</p>
+
+</form>
+
+<p><a href="index.html">Return Home</a></p>
 
 </body>
 </html>
+
